@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "LemonMilk";
+	src:  url("../assets/LemonMilk.otf");
+}
+body {
+	margin: 0
+}
+
+#applyPage {
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #332A4D;
+}
+
+#applyGroup {
+	cursor: pointer;
+}
