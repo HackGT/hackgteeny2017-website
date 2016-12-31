@@ -2,17 +2,23 @@
 	font-family: "LemonMilk";
 	src:  url("../assets/LemonMilk.otf");
 }
+
 body {
-	margin: 0
+	background-color: #332A4D;
 }
 
 #applyPage {
-	height: 100%;
-	margin: 0 auto;
 	text-align: center;
-	background-color: #332A4D;
+}
+#applyPage > svg {
+	height: 75vh;
 }
 
 #applyGroup {
 	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "LemonMilk";
+	color: white;
 }
