@@ -26,24 +26,25 @@ Snap.load(url, function(fragment) {
 
 function prepareApplyPage(){
 	console.log("!!")
-	var applyGroup = applyPage.select("#applyGroup");
-	var applyRectangle = applyGroup.select("#applyRect");
-	
+	var bounceGroup = applyPage.selectAll(".bounceGroup");
 	
 
-	var rectangleAnimating;
 
-	applyGroup.node.onmouseenter = function() {
-		console.log("A")
-		if(!rectangleAnimating) {
-			rectangleAnimating = true;
+	bounceGroup.forEach(function(el){
+		el.rectangleAnimating = false;
 
-			applyGroup.animate({transform:"t0,5"}, 100, function(){
-				applyGroup.animate({transform:"t0,0"}, 100, function(){
-					rectangleAnimating = false;
+		el.node.onmouseenter = function(e) {
+			console.log("A")
+			if(!el.rectangleAnimating) {
+				el.rectangleAnimating = true;
+
+				el.animate({transform:"t0,5"}, 100, function(){
+					el.animate({transform:"t0,0"}, 100, function(){
+						el.rectangleAnimating = false;
+					})
 				})
-			})
-		}
+			}
 	}
+	})
 
 }

@@ -34,7 +34,7 @@
 	.st28{fill-rule:evenodd;clip-rule:evenodd;fill:#DBF1FB;}
 	.st29{fill-rule:evenodd;clip-rule:evenodd;fill:#8ED6F5;}
 	.st30{fill:none;stroke:#C2E8F8;stroke-miterlimit:10;}
-	.st31{fill:none;stroke:#C2E8F8;stroke-miterlimit:10;stroke-dasharray:11.9859,11.9859;}
+	.st31{fill:none;stroke:#C2E8F8;stroke-miterlimit:10;stroke-dasharray:12;}
 	.st32{fill-rule:evenodd;clip-rule:evenodd;fill:#6FB2CB;}
 	.st33{fill-rule:evenodd;clip-rule:evenodd;fill:#BDE6F7;}
 	.st34{fill-rule:evenodd;clip-rule:evenodd;fill:#76B8C8;}
@@ -72,13 +72,23 @@
 	.st66{fill-rule:evenodd;clip-rule:evenodd;fill:#375461;}
 	.st67{fill-rule:evenodd;clip-rule:evenodd;fill:#375561;}
 </style>
+<g id="Layer_2">
+	<rect y="-6.2" class="st0" width="792" height="624.5"/>
+</g>
 <g id="Layer_3">
-	<line class="st1" x1="342.5" y1="348.1" x2="342.5" y2="373.6"/>
-	<line class="st1" x1="438.4" y1="348.1" x2="438.4" y2="373.6"/>
-	<g id="applyGroup">
-		<rect x="310.2" y="368.6" class="st2" width="162.1" height="43.5" id="applyRect"/>
-		<rect x="351.9" y="380.6" class="st3" width="82.5" height="48"/>
-		<text transform="matrix(1 0 0 1 351.9477 399.4165)" class="st4 st5 st6">APPLY</text>
+	<line class="st1" x1="460.5" y1="351.7" x2="460.5" y2="382.6"/>
+	<line class="st1" x1="556.3" y1="351.7" x2="556.3" y2="382.6"/>
+	<g id="infoGroup" class="bounceGroup">
+		<rect x="428.1" y="371.7" class="st2" width="162.1" height="43.5"/>
+		<rect x="482.9" y="383.6" class="st3" width="57.8" height="48"/>
+		<text transform="matrix(1 0 0 1 482.9169 402.4888)" class="st4 st5 st6">Info</text>
+	</g>
+	<line class="st1" x1="220" y1="350.1" x2="220" y2="381"/>
+	<line class="st1" x1="315.9" y1="350.1" x2="315.9" y2="381"/>
+	<g id="applyGroup" class="bounceGroup">
+		<rect x="187.7" y="370.6" class="st2" width="162.1" height="43.5"/>
+		<rect x="229.5" y="382.6" class="st3" width="82.5" height="48"/>
+		<text transform="matrix(1 0 0 1 229.4575 401.4526)" class="st4 st5 st6">APPLY</text>
 	</g>
 	<rect x="65.4" y="324.6" class="st7" width="654" height="27"/>
 	<rect x="65.4" y="262.5" class="st8" width="654" height="62.2"/>
@@ -282,26 +292,22 @@
 		<path class="st29" d="M657.4,97.3c-1.6,0-3.1,0-4.7,0c-1.5,0.1-1.8-0.5-1.2-1.8c0.9-1.9,3.5-3.5,6-3.2c2.4,0.2,4.5,1.1,5.6,3.6
 			c0.4,1,0.2,1.5-0.9,1.5C660.7,97.3,659.1,97.3,657.4,97.3z"/>
 	</g>
-
 	<path class="st30" d="M81,181"/>
 	<g>
-		<g>
-			<path class="st30" d="M504.4,176c-1.5-1.2-3.1-2.5-4.7-3.7"/>
-			<path class="st31" d="M489.6,165.7c-9.8-5.5-20.5-8.9-30.6-5.7c-9.6,3-14.8,10.6-17,13.5c-29.9,40.2-117.3,53.2-180,62.5
-				c-19,2.8-39.3,5-55.5-7c-1.9-1.4-19-14.3-16-29c2-9.9,12.7-18.5,27.5-20.9"/>
-			<path class="st30" d="M224,178.5c1.9-0.1,4-0.1,6,0"/>
-		</g>
+		<path class="st12" d="M219.1,169.6c0-0.9-0.4-1.7-1.2-2.4v4.8C218.7,171.4,219.1,170.5,219.1,169.6z"/>
+		<path d="M214.4,165.7v7.8c1.4-0.2,2.7-0.7,3.5-1.5v-4.8C217.1,166.5,215.9,165.9,214.4,165.7z"/>
+		<ellipse class="st15" cx="213.5" cy="161.6" rx="2.7" ry="4"/>
+		<ellipse class="st15" cx="213.5" cy="177.6" rx="2.7" ry="4"/>
+		<path class="st12" d="M207.5,169.6c0,0.9,0.4,1.7,1.1,2.3v-4.7C207.9,168,207.5,168.8,207.5,169.6z"/>
+		<path class="st12" d="M213.3,165.7c-0.4,0-0.8,0-1.2,0.1v7.8c0.4,0.1,0.8,0.1,1.2,0.1c0.4,0,0.8,0,1.1-0.1v-7.8
+			C214.1,165.7,213.7,165.7,213.3,165.7z"/>
+		<path d="M208.6,167.3v4.7c0.8,0.8,2.1,1.4,3.5,1.6v-7.8C210.7,165.9,209.5,166.5,208.6,167.3z"/>
 	</g>
-	<g>
-		<path class="st12" d="M248,180c0-0.9-0.4-1.7-1.2-2.4v4.8C247.6,181.7,248,180.9,248,180z"/>
-		<path d="M243.3,176.1v7.8c1.4-0.2,2.7-0.7,3.5-1.5v-4.8C246,176.8,244.7,176.3,243.3,176.1z"/>
-		<ellipse class="st15" cx="242.3" cy="172" rx="2.7" ry="4"/>
-		<ellipse class="st15" cx="242.3" cy="188" rx="2.7" ry="4"/>
-		<path class="st12" d="M236.4,180c0,0.9,0.4,1.7,1.1,2.3v-4.7C236.8,178.3,236.4,179.1,236.4,180z"/>
-		<path class="st12" d="M242.2,176c-0.4,0-0.8,0-1.2,0.1v7.8c0.4,0.1,0.8,0.1,1.2,0.1c0.4,0,0.8,0,1.1-0.1v-7.8
-			C242.9,176,242.6,176,242.2,176z"/>
-		<path d="M237.5,177.6v4.7c0.8,0.8,2.1,1.4,3.5,1.6v-7.8C239.6,176.3,238.3,176.9,237.5,177.6z"/>
-	</g>
+	<path d="M205.5,163"/>
+	<path d="M254,180"/>
+	<path class="st31" d="M263.5,181.5c124.7,52.9,267.1,61.2,311,40c3.8-1.8,10.9-5.8,16.5-13.5c13.1-17.9,14.8-51.5-5.5-71
+		c-12.6-12.1-35-9.9-82,7c-113.8,41-145.3,90.2-234,104.5c-44.4,7.2-65.1-0.6-76-12.5c-7.3-8-17-25.4-11.5-42.5
+		c0.5-1.5,3.7-11.2,12.5-17.5C215.6,160.8,252.1,176.7,263.5,181.5z"/>
 </g>
 <g id="Layer_1">
 	<g>

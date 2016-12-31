@@ -16,3 +16,7 @@ body {
 #applyGroup {
 	cursor: pointer;
 }
+
+.bounceGroup { /*remove #applyGroup after merge*/
+	cursor: pointer;
+}
