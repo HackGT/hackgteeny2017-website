@@ -2,15 +2,38 @@
 	font-family: "LemonMilk";
 	src:  url("../assets/LemonMilk.otf");
 }
+
 body {
-	margin: 0
+	margin: 0;
+	background-color: #332A4D;
+	text-align: center;
 }
 
-#applyPage {
+#first-page {
 	height: 100%;
-	margin: 0 auto;
-	text-align: center;
-	background-color: #332A4D;
+}
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+#first-page::after {
+	content: "\25BC";
+	font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    width: 24px;
+    left: calc(50% - 12px);
+	animation: pulse 3s ease-in-out;
+	animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+
+#applyPage > svg {
+	height: 75vh;
+	max-width: 100vw;
 }
 
 #applyGroup {
@@ -19,4 +42,12 @@ body {
 
 .bounceGroup { /*remove #applyGroup after merge*/
 	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: "LemonMilk";
+	color: white;
+}
+h3.details {
+	font-size: 5vh;
 }
