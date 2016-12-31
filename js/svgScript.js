@@ -9,15 +9,14 @@ Snap.load(url, function(fragment) {
 	var svgElement = fragment.select("svg");
 	console.log(svgElement)
 	svgElement.attr({
-		height: window.innerHeight,
-		id: "applyPage"
-	})
+		id: "applyPage_svg"
+	});
 
 	window.onresize = function() {
 		//this way when we change the screen size the SVG changes size too
 		svgElement.attr({
-			height: window.innerHeight,
-		})
+			//height: window.innerHeight,
+		});
 	}
 
 	applyPage.append(svgElement);
