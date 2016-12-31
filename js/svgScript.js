@@ -25,10 +25,7 @@ Snap.load(url, function(fragment) {
 })
 
 function prepareApplyPage(){
-	console.log("!!")
 	var bounceGroup = applyPage.selectAll(".bounceGroup");
-	
-
 
 	bounceGroup.forEach(function(el){
 		el.rectangleAnimating = false;
@@ -44,7 +41,20 @@ function prepareApplyPage(){
 					})
 				})
 			}
-	}
+		}
 	})
+
+	var path = applyPage.select("#beePath")
+	var bee = applyPage.select("#bee")
+
+	console.log(path, bee)
+
+	function moveBee(beeEl) {
+		beeEl.drawAtPath( path, 14000, {
+			callback: moveBee.bind(null, beeEl)
+		})
+	}
+
+	moveBee(bee)
 
 }
