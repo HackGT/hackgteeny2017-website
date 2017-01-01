@@ -77,8 +77,7 @@
 <g id="Layer_3">
 	<line class="st1" x1="460.5" y1="351.7" x2="460.5" y2="382.6"/>
 	<line class="st1" x1="556.3" y1="351.7" x2="556.3" y2="382.6"/>
-	<a xlink:href="#" target="_blank">
-		<!--this redirects to a new version of the page, so we might just want to make an onlick event where it scrolls down-->
+	<a xlink:href="#info">
 		<g id="infoGroup" class="bounceGroup">
 			<rect x="428.1" y="371.7" class="st2" width="162.1" height="43.5"/>
 			<rect x="482.9" y="383.6" class="st3" width="57.8" height="48"/>
