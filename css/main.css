@@ -25,10 +25,17 @@ hr {
 }
 p {
 	font-family: "Open Sans", sans-serif;
+	text-align: justify;
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
 }
 footer {
 	font-size: 0.7em;
 	margin: 15px 0;
+}
+footer p {
+	text-align: center;
 }
 
 #first-page {
@@ -56,6 +63,16 @@ footer {
 #first-page.hide-scroll-indicator::after {
 	animation: none;
 	opacity: 0;
+}
+
+@media screen and (min-width: 35.5em) {
+	#info {
+		margin: 0;
+		background-image: url("../assets/SleepingBear.svg");
+		background-repeat: no-repeat;
+		background-size: 25%;
+		background-position: right top;
+	}
 }
 
 #applyPage {
