@@ -80,7 +80,8 @@ footer p {
 		content: "";
 		display: block;
 		width: 100vw;
-		height: 185px;
+		/* SVG height / width * background-size in vw  */
+		height: calc(530 / 932 * 25vw);
 		transform:scaleX(-1);
 	}
 }
