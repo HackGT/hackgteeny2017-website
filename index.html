@@ -3,8 +3,11 @@
 	<head>
 		<title>HackGTeeny</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="theme-color" content="#332A4D" />
+		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 	</head>
 	<body>
 		<section id="first-page">
@@ -15,12 +18,76 @@
 				9 AM &ndash; 11 PM
 			</h3>
 		</section>
+		<hr />
 		<section id="info">
-			<p>The rest of the content goes here</p>
+			<h1>Info</h1>
+			<p>Info about the HackGTeeny event</p>
+		</section>
+		<section id="schedule">
+			<h1>Schedule</h1>
+			<table>
+				<thead>
+					<tr>
+						<td colspan="2">Saturday, January 21st</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>9:00 AM</td>
+					<td>Begin</td>
+				</tr>
+				<tr>
+					<td>12:00 PM</td>
+					<td>Lunch(?)</td>
+				</tr>
+				<tr>
+					<td>11:00 PM</td>
+					<td>End</td>
+				</tr>
+			</table>
+		</section>
+		<section id="faq">
+			<h1>Frequently Asked Questions</h1>
+			<ul>
+				<li>
+					<strong>What is HackGTeeny?</strong>
+					<p>HackGT is Georgia Tech's official national hackathon. Over 1000 hackers travel across the nation to experience their healthy, hacking get away in the heart of Atlanta, Georgia.</p>
+				</li>
+				<li>
+					<strong>Who is eligible?</strong>
+					<p>You're good as long as you're at least 18 years old. Prior experience isn't required although it would make the hackathon more fun. Teams can be up to four members - you can register with your team now or create a team at the event.</p>
+				</li>
+				<li>
+					<strong>What should I bring?</strong>
+					<p>Bring your laptop, headphones, and anything else you need to hack comfortably but we'll supply hardware and provide you with balanced meals and snacks that’ll leave you feeling full and energetic for a weekend of innovation. We’ll even give you a comfortable space where you can sleep and refocus your energy. Remember, we’re all about balance. Many more comforts to be announced soon!</p>
+				</li>
+				<li>
+					<strong>How much does it cost?</strong>
+					<p>To us, knowledge and ideas should flow freely. So we’re going to keep it that way and make you pay absolutely nothing. Additionally, we’re offering up to $275 in travel reimbursement. Just indicate your needs in your application and we’ll reach out personally to take care of you. We really do want you here!</p>
+				</li>
+				<li>
+					<strong>Can I use past projects?</strong>
+					<p>The universe discourages it because it’s an illusion of true innovation. Well maybe, but it also just takes away all the fun in hacking! However, you’re more than welcome to use open-source libraries as well as existing platforms and services.</p>
+				</li>
+			</ul>
+		</section>
+		<section id="sponsors">
+			<h1>Made Possible By</h1>
 		</section>
 
 		<script src="js/snap.svg-min.js"></script>
 		<script src="js/animate-object-path.js"></script>
 		<script src="js/svgScript.js"></script>
+		<script>
+			var firstPage = document.getElementById("first-page");
+			var hideScrollIndicatorClass = "hide-scroll-indicator";
+			document.addEventListener("scroll", function (event) {
+				if (window.scrollY !== 0) {
+					firstPage.classList.add(hideScrollIndicatorClass);
+				}
+				else {
+					firstPage.classList.remove(hideScrollIndicatorClass);
+				}
+			});
+		</script>
 	</body>
 </html>
