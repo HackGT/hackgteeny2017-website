@@ -27,6 +27,12 @@ footer {
 #first-page {
 	height: 100%;
 }
+@media screen and (max-width: 32em) {
+	#first-page {
+		margin-top: -60px;
+		margin-bottom: 60px;
+	}
+}
 @keyframes pulse {
     0% { opacity: 0.6; }
     50% { opacity: 1; }
@@ -38,7 +44,7 @@ footer {
     color: white;
     font-weight: bold;
     position: absolute;
-    bottom: 5px;
+    bottom: 1.5vh;
     width: 24px;
     left: calc(50% - 12px);
 	/*animation: pulse 3s ease-in-out;*/
