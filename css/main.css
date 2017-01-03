@@ -66,12 +66,21 @@ footer p {
 }
 
 @media screen and (min-width: 35.5em) {
-	#info {
+	#info, #sponsors::before {
 		margin: 0;
 		background-image: url("../assets/SleepingBear.svg");
 		background-repeat: no-repeat;
 		background-size: 25%;
 		background-position: right top;
+	}
+	#sponsors::before {
+		/* Required to mirror the background image to the other side */
+		position: absolute;
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 185px;
+		transform:scaleX(-1);
 	}
 }
 
