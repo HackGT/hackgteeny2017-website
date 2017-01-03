@@ -3,9 +3,9 @@ var applyPage = Snap("#applyPage");
 
 
 // define the url to load the svg from
-var splashUrl = "assets/hackgteeny-fixed.svg";
+var url = "assets/hackgteeny-fixed.svg";
 
-Snap.load(splashUrl, function(fragment) {
+Snap.load(url, function(fragment) {
 	var svgElement = fragment.select("svg");
 	console.log(svgElement)
 	svgElement.attr({
@@ -115,31 +115,3 @@ function prepareApplyPage(){
 	}
 	window.requestAnimationFrame(update);
 }
-
-
-var bear = Snap("#bear");
-
-
-// define the url to load the svg from
-var bearUrl = "assets/SleepingBear.svg";
-
-Snap.load(bearUrl, function(fragment) {
-	var svgElement = fragment.select("svg");
-	console.log(svgElement)
-	svgElement.attr({
-		id: "bear_svg"
-	});
-
-	window.onresize = function() {
-		//this way when we change the screen size the SVG changes size too
-		svgElement.attr({
-			//height: window.innerHeight,
-		});
-	}
-
-	bear.append(svgElement);
-	// prepareApplyPage()
-})
-
-
-
