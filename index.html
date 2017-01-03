@@ -132,14 +132,34 @@
 		<script src="js/animate-object-path.js"></script>
 		<script src="js/svgScript.js"></script>
 		<script>
+			function isScrolledIntoView(el) {
+				var elemTop = el.getBoundingClientRect().top;
+				var elemBottom = el.getBoundingClientRect().bottom;
+
+				var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+				return isVisible;
+			}
+			
 			var firstPage = document.getElementById("first-page");
 			var hideScrollIndicatorClass = "hide-scroll-indicator";
+
+			var sections = ["first-page", "info", "schedule", "faq", "sponsors"].map(function (id) {
+				return document.getElementById(id);
+			});
+			var colors = ["#332A4D", "#26A69A", "#5C6BC0", "#26A69A", "#332A4D"];
+
 			document.addEventListener("scroll", function (event) {
 				if (window.scrollY !== 0) {
 					firstPage.classList.add(hideScrollIndicatorClass);
+					document.body.style.backgroundColor = colors[0];
 				}
 				else {
 					firstPage.classList.remove(hideScrollIndicatorClass);
+					for (var i = 0; i < sections.length; i++) {
+						if (isScrolledIntoView(sections[i])) {
+							document.body.style.backgroundColor = colors[i];
+						}
+					}
 				}
 			});
 		</script>

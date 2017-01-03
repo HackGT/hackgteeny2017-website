@@ -5,10 +5,12 @@
 
 body {
 	margin: 0;
-	background-color: #332A4D;
 	text-align: center;
 	font-family: "LemonMilk";
 	color: white;
+	
+	background-color: #332A4D;
+	transition: background-color 0.5s;
 }
 section {
 	margin: 0 10px;
