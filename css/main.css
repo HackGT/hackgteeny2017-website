@@ -5,14 +5,11 @@
 
 body {
 	margin: 0;
-	background-color: #332A4D;
 	text-align: center;
 	font-family: "LemonMilk";
 	color: white;
 }
-section {
-	margin: 0 10px;
-}
+
 hr {
 	border: 1px dashed white;
     opacity: 0.1;
@@ -26,7 +23,10 @@ footer {
 
 #first-page {
 	height: 100%;
+	background-color: #332A4D;
 }
+
+
 @media screen and (max-width: 32em) {
 	#first-page {
 		margin-top: -60px;
@@ -62,9 +62,49 @@ footer {
 	max-width: 100vw;
 }
 
-#applyGroup {
-	cursor: pointer;
+.content-page {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
 }
+
+#info, #faq {
+	background-color: #26A69A;
+}
+
+#schedule, #sponsors {
+	background-color: #5C6BC0;
+}
+
+#bear {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 25%;
+}
+
+#bear > svg {
+	height: 75vh;
+	max-width: 100%;
+/*	top: 0;
+	position: absolute;
+    top: -20%;
+    right: 0;*/
+}
+
+@media only screen and (max-width: 512px) {/*if the screen's too small, hide the bear*/
+	#bear {
+		display: none;
+	}
+}
+
+/*#splash-info-gradient {
+	height: 1em;
+	width: 100%;
+	background: linear-gradient(#332A4D, #26A69A);
+	margin: 0;
+}*/
 
 .bounceGroup { /*remove #applyGroup after merge*/
 	cursor: pointer;
@@ -84,7 +124,20 @@ td:nth-child(2) {
 	font-family: "Open Sans", sans-serif;
 }
 
-section > h1 {
+/*looking for a more elegant way to fix white space generated at top/bottom of divs bc of text*/
+
+.content-page > h1, p:first-of-type {
+	margin-top: 0;
+	padding-top: 1em;
+}
+
+.content-page > h1, p, li:last-of-type {
+	margin-bottom: 0;
+	padding-bottom: .5em;
+}
+
+
+.content-page > h1 {
 	letter-spacing: 2px;
 }
 h3.details {
