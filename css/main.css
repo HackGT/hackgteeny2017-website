@@ -97,6 +97,11 @@ h3.details {
 	font-size: 2em;
 	letter-spacing: 1px;
 }
+@media screen and (max-width: 35.5em) {
+	h3.details {
+		/*font-size: 4em;*/
+	}
+}
 #faq li > strong {
 	letter-spacing: 1px;
 }
@@ -141,15 +146,25 @@ h3.details {
 	border: 1px solid #999;
 }
 
+#sponsors {
+	margin: 0;
+}
 .sponsor-group {
 	display: flex;
-	justify-content: center;
+	flex-flow: row nowrap;
+	max-width: 100%;
+	overflow: auto;
+	padding: 10px 0;
+}
+.sponsor-group::before, .sponsor-group::after {
+	content: "";
+	margin: auto;
 }
 .sponsor {
 	display: inline-block;
 	width: 128px;
     height: 180px;
-	margin: 0 20px;
+	padding: 0 20px;
 	transform: scale(1);
     transition: .3s;
 }
