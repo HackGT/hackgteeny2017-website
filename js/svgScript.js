@@ -106,15 +106,12 @@ function prepareApplyPage(){
 	}
 	var startTime = new Date()
 	var period = 13131
-	setInterval(function(){
+
+	function update() {
 		// var elapsed = (new Date() - startTime) % period
-
 		// updateEyePosition((Math.cos(elapsed / period * Math.PI * 2) + 1) / 2)
-
-
-		updateEyePosition(1)
-
-	}, 10)
-	
-
+		updateEyePosition(1);
+		window.requestAnimationFrame(update);
+	}
+	window.requestAnimationFrame(update);
 }
