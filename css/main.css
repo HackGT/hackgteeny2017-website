@@ -17,6 +17,9 @@ hr {
 p {
 	font-family: "Open Sans", sans-serif;
 }
+footer {
+	font-size: 0.7em;
+}
 
 #first-page {
 	height: 100%;
@@ -87,4 +90,38 @@ h3.details {
 	margin: 0 auto;
     padding: 0;
     max-width: 550px;
+}
+
+.social > a {
+	display: inline-block;
+    margin: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+	text-decoration: none;
+}
+.social > a > i {
+	font-size: 16px;
+    width: 22px;
+    line-height: 40px;
+}
+.social > a.twitter {
+	background: #55acee;
+}
+.social > a.facebook {
+	background: #3b5998;
+}
+.social > a.email {
+	background: #ed77d8;
+}
+.social > a.github {
+	background: #333;
+	border: 1px solid #999;
 }
