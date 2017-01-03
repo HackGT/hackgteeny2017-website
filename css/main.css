@@ -76,6 +76,7 @@ footer p {
 	#sponsors::before {
 		/* Required to mirror the background image to the other side */
 		position: absolute;
+		right: 0;
 		content: "";
 		display: block;
 		width: 100vw;
