@@ -10,6 +10,9 @@ body {
 	font-family: "LemonMilk";
 	color: white;
 }
+section {
+	margin: 0 10px;
+}
 hr {
 	border: 1px dashed white;
     opacity: 0.1;
