@@ -37,6 +37,9 @@ footer {
 footer p {
 	text-align: center;
 }
+abbr {
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
 
 #first-page {
 	height: 100%;
@@ -101,6 +104,12 @@ footer p {
 
 .bounceGroup { /*remove #applyGroup after merge*/
 	cursor: pointer;
+}
+
+iframe.map {
+	width: 100%;
+	max-width: 550px;
+	height: 400px;
 }
 
 table {
