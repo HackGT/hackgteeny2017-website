@@ -151,7 +151,7 @@ h3.details {
     position: relative;
     width: 40px;
     height: 40px;
-    color: #fff;
+    color: #fff !important;
     border-radius: 50%;
     transition: all 0.3s;
 	text-decoration: none;
@@ -204,3 +204,19 @@ h3.details {
 	width: 128px;
     height: 128px;
 }
+
+a:link {
+    color: #f1c40f;
+}
+
+a:visited {
+    color: #bdc3c7;
+}
+
+/*a:hover {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}*/
