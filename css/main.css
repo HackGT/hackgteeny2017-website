@@ -151,7 +151,7 @@ h3.details {
     position: relative;
     width: 40px;
     height: 40px;
-    color: #fff;
+    color: #fff !important;
     border-radius: 50%;
     transition: all 0.3s;
 	text-decoration: none;
