@@ -79,7 +79,8 @@
 	</a>
 	<line class="st0" x1="568.5" y1="345.8" x2="568.5" y2="376.7"/>
 	<line class="st0" x1="664.3" y1="345.8" x2="664.3" y2="376.7"/>
-	<a xlink:href="#info" >
+	<!-- Setting target to _top ensures that this won't open a new tab -->
+	<a xlink:href="#info" target="_top">
 		<g class="bounceGroup">
 			<rect x="536.2" y="367.8" class="st1" width="162.1" height="43.5"/>
 			<rect x="591" y="379.7" class="st2" width="57.8" height="48"/>
