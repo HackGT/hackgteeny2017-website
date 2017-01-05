@@ -90,8 +90,9 @@ footer p {
 	height: 75%;
 }
 #applyPage > svg {
-	height: 100%;
-	width: 100%;
+	height: calc(100% - 50px);
+    width: calc(100% - 20px);
+    margin: 50px 10px 0 10px;
 }
 
 #applyGroup {
