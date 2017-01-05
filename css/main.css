@@ -204,3 +204,19 @@ h3.details {
 	width: 128px;
     height: 128px;
 }
+
+a:link {
+    color: #f1c40f;
+}
+
+a:visited {
+    color: #bdc3c7;
+}
+
+/*a:hover {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}*/
