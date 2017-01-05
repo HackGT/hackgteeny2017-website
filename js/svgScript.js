@@ -83,10 +83,8 @@ function prepareApplyPage(){
 		return "t" + Math.round(v.x*precision)/precision + "," + Math.round(v.y*precision)/precision
 	}
 
-	//pupils are st61 & st62
-
-	var leftEye = applyPage.select('.st62')
-	var rightEye = applyPage.select('.st61')
+	var leftEye = applyPage.select('#path3771')
+	var rightEye = applyPage.select('#path3769')
 
 	var eyes = [leftEye, rightEye]
 
